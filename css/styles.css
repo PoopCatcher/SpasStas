@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*-------------------------*/
+html {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+main {
+  background-color: #eeebdd;
+  height: auto;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  position: static;
+}
+
+header {
+  background-color: #1b1717;
+  font-size: 30px;
+  color: #eeebdd;
+  box-shadow: 0 0 20px #000;
+  padding: 20px;
+  vertical-align: middle;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+header img {
+  width: 30px;
+  margin: 0 7px;
+}
+
+.main-header {
+  display: inline;
+  font-family: "Mate SC", serif;
+}
+.main-header.version {
+  font-size: 12px;
+}
+footer {
+  margin-top: auto;
+  position: relative;
+  background-color: #1b1717;
+  box-shadow: 0 0 20px #000;
+  height: 100px;
+  width: 100%;
+  z-index: 2;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+.sun-s {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-color: #ce1212;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.container-main-sub {
+  margin: -700px 0 0 0;
+  position: relative;
+  z-index: 1;
+}
+.main2 {
+  background-image: url(../img/fuji.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 100vw;
+  height: 450px;
+}
+.main21 {
+  background-color: #1b1717;
+  height: auto;
+  color: #eeebdd;
+  padding: 0px 650px;
+  font-size: 20px;
+}
+.credits {
+  height: inherit;
+  padding: 0 0 0 40px;
+  display: flex;
+  align-items: center;
+  color: #eeebdd;
+}
+.cite-ta {
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #000;
+  background-color: #161515;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 18px;
+  color: #999999;
+  line-height: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.cite-kaw {
+  background-image: url(../img/quotes.png);
+  background-repeat: no-repeat;
+  background-size: 75px;
+  height: inherit;
+  width: 700px;
+  margin: -10px 10px 0 0;
+}
+.cite-kaw.bottom {
+  margin: 240px 0 0 0;
+}
+.main21.maps {
+  background-color: #1b1717;
+  background-image: url(../img/japanr.png);
+  background-size: 1380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 1500px;
+  width: 100%;
+  color: #eeebdd;
+  padding: 150px 50px;
+  font-size: 20px;
+}
+.mapcard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  border-top: 1px solid #eeebdd1f;
+  border-left: 1px solid #eeebdd1f;
+  box-shadow: 0 1px 10px #000;
+  background-color: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  width: 550px;
+  height: 210px;
+  margin: 20px;
+}
+.mapcard img {
+  border-radius: 10px;
+  border: 1px solid #000;
+  border-top: 1px solid #eeebdd1f;
+  border-left: 1px solid #eeebdd1f;
+  overflow: hidden;
+  box-shadow: 0 0 7px #000;
+  height: 180px;
+  width: 180px;
+  margin: 0 0 0 20px;
+}
+
+.mctext {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  padding: 30px;
+  height: inherit;
+}
+.ctitle {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  font-family: "Mate SC", serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.mctext ul li {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  padding: 6px 6px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+}
+.jp-txt {
+  font-family: "Noto Serif JP", serif;
+}
+.tempe {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  font-family: "Mate SC", serif;
+  font-size: 15px;
+  padding: 3px 0;
+}
+.inmaps {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+}
